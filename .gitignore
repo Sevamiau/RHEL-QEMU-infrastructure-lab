@@ -1,0 +1,10 @@
+*.qcow2
+*.iso
+*.img
+.env
+id_rsa
+id_ed25519
+secrets.yaml
+__pycache__/
+*.pyc
+.venv/
