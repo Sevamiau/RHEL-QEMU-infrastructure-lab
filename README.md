@@ -45,6 +45,10 @@ Use the provided script to boot the environment. This is configured for a **Mini
 ```bash
 ./scripts/install_lab.sh
 ```
+Once its done use the provided script to start the lab:
+```bash 
+./scripts/start_lab.sh
+```
 
 ---
 ### 5. System Registration
