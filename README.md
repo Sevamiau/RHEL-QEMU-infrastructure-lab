@@ -60,7 +60,7 @@ After your first login, you must register the system. Running this command will 
 sudo subscription-manager register --username <your_user_name> --password <your_password>
 ```
 
-Once registered, the system will have full access to the BaseOS and AppStream repositories, allowing you to install packages like Apache, Python, and Neovim.
+Once registered, the system will have full access to the BaseOS and AppStream repositories, allowing you to install packages.
 
 
 ## Management and Automation
