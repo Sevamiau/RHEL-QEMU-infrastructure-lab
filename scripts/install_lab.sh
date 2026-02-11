@@ -16,10 +16,10 @@ qemu-system-x86_64 \
   -enable-kvm \
   -cpu host \
   -smp 2 \
-  -drive file=$OS_DISK,format=qcow2,if=virtio \
-  -drive file=$DATA_DISK,format=qcow2,if=virtio \
-  -drive file=$SPARE_DISK,format=qcow2,if=virtio \
-  -cdrom $ISO \
+  -drive file="$OS_DISK,format=qcow2,if=virtio" \
+  -drive file="$DATA_DISK,format=qcow2,if=virtio" \
+  -drive file="$SPARE_DISK,format=qcow2,if=virtio" \
+  -cdrom "$ISO" \
   -netdev user,id=n1,hostfwd=tcp::${SSH_PORT}-:22,hostfwd=tcp::${HTTP_PORT}-:80 \
   -device virtio-net-pci,netdev=n1 \
   -boot d
