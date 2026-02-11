@@ -53,7 +53,7 @@ RHEL requires an active subscription to access the official repositories. Since 
 
 After your first login, you must register the system. Running this command will prompt you for your Red Hat Portal username and password:
 ```
-sudo subscription-manager register --auto-attach
+sudo subscription-manager register --username <your_user_name> --password <your_password>
 ```
 
 Once registered, the system will have full access to the BaseOS and AppStream repositories, allowing you to install packages like Apache, Python, and Neovim.
