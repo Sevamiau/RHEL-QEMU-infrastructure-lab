@@ -47,6 +47,17 @@ Use the provided script to boot the environment. This is configured for a **Mini
 ```
 
 ---
+### 5. System Registration
+
+RHEL requires an active subscription to access the official repositories. Since this lab is for development, you can use a no-cost Red Hat Developer Subscription.
+
+After your first login, you must register the system. Running this command will prompt you for your Red Hat Portal username and password:
+```
+sudo subscription-manager register --auto-attach
+```
+
+Once registered, the system will have full access to the BaseOS and AppStream repositories, allowing you to install packages like Apache, Python, and Neovim.
+
 
 ## Management and Automation
 
